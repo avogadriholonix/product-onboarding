@@ -150,14 +150,18 @@ github_teams = {
   "product-knowledge" : {
     "name" : "product-knowledge"
     "description" : "Catena-X Knowledge Agents delivers a semantically-driven and state-of-the-art compute-to-data architecture for automotive use cases based on the best GAIA-X, W3C and Big Data practices. Team Discussions: catenax-ng/product-knowledge"
-  }
+  },
   "release-management" : {
     name : "release-management"
     description : "Members will be granted permissions to manage releases on release relevant environments"
-  }
+  },
   "test-management" : {
     name : "test-management"
     description : "Members will be granted permissions to manage deployments on integration environments for testing purposes"
+  },
+  "beta-admins" : {
+    name : "beta-admins"
+    description : "Members will be granted admin permissions for beta environment"
   },
   "product-registry-twin-check" : {
     name : "product-registry-twin-check"
@@ -178,7 +182,7 @@ github_teams = {
   "product-r-strategy-assistant" : {
     name : "product-r-strategy-assistant"
     description : ""
-  }
+  },
   "traceability-spec" : {
     name: "traceability-spec"
     description: "Content team for Traceability KIT documentation"
@@ -531,44 +535,8 @@ github_repositories = {
     codeowners : null
     archived : false
   },
-  "tx-dft-backend" : {
-    name : "tx-dft-backend"
-    team_name : "product-dft"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : true
-      branch : "gh-pages"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "product-dft-frontend" : {
     name : "product-dft-frontend"
-    team_name : "product-dft"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : true
-      branch : "gh-pages"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-dft-frontend" : {
-    name : "tx-dft-frontend"
     team_name : "product-dft"
     description : ""
     visibility : "public"
@@ -1044,10 +1012,10 @@ github_repositories = {
   "product-battery-passport-consumer-app" : {
     name : "product-battery-passport-consumer-app"
     team_name : "product-material-pass"
-    description : "Catena-X Digital Product Passport Application (Frontend/Backend)"
+    description : "DEPRECATED: Repository moved to https://github.com/eclipse-tractusx/digital-product-pass"
     visibility : "public"
-    homepage_url : "https://materialpass.int.demo.catena-x.net"
-    topics : []
+    homepage_url : ""
+    topics : ["deprecated"]
     pages : {
       enabled : true
       branch : "gh-pages"
@@ -1057,7 +1025,7 @@ github_repositories = {
     template : null
     codeowners_available : false
     codeowners : null
-    archived : false
+    archived : true
   },
   "gh-org-checks" : {
     name : "gh-org-checks"
@@ -1431,173 +1399,6 @@ github_repositories = {
     codeowners : null
     archived : true
   },
-  "tx-sd-factory" : {
-    name : "tx-sd-factory"
-    team_name : "product-essential-services"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-item-relationship-service" : {
-    name : "tx-item-relationship-service"
-    team_name : "product-traceability-irs"
-    homepage_url : "https://catenax-ng.github.io/tx-item-relationship-service/docs/"
-    description : ""
-    visibility : "public"
-    homepage_url : "https://catenax-ng.github.io/tx-item-relationship-service/docs/"
-    topics : []
-    pages : {
-      enabled : true
-      branch : "gh-pages"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-daps-registration-service" : {
-    name : "tx-daps-registration-service"
-    team_name : "product-essential-services"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-daps-helm-chart" : {
-    name : "tx-daps-helm-chart"
-    team_name : "product-essential-services"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-autosetup-backend" : {
-    name : "tx-autosetup-backend"
-    team_name : "product-essential-services"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : true
-      branch : "gh-pages"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-portal-assets" : {
-    name : "tx-portal-assets"
-    team_name : "product-portal"
-    description : "Catena-X Portal Assets"
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-portal-frontend-registration" : {
-    name : "tx-portal-frontend-registration"
-    team_name : "product-portal"
-    description : "Catena-X Portal Frontend Registration"
-    visibility : "public"
-    homepage_url : "https://portal.demo.catena-x.net/registration/"
-    topics : ["catena-x", "frontend", "portal", "registration"]
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-portal-frontend" : {
-    name : "tx-portal-frontend"
-    team_name : "product-portal"
-    description : "Catena-X Portal Frontend"
-    visibility : "public"
-    homepage_url : "https://portal.dev.demo.catena-x.net"
-    topics : ["catena-x", "docker", "portal", "react", "typescript"]
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : {
-      review_count : 1
-      pattern : "[dm][ea][vi]*"
-      # terrible workaround as GH provider can only create one rule and GH only supports very limited RegEx features
-    }
-    archived : false
-  },
-  "tx-portal-backend" : {
-    name : "tx-portal-backend"
-    team_name : "product-portal"
-    description : "Catena-X Portal Backend"
-    visibility : "public"
-    homepage_url : ""
-    topics : ["catena-x", "portal", "backend", "dotnet", "csharp", "docker"]
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "tractus-x-release" : {
     name : "tractus-x-release"
     team_name : ""
@@ -1724,24 +1525,6 @@ github_repositories = {
     codeowners : null
     archived : false
   },
-  "tx-bpdm" : {
-    name : "tx-bpdm"
-    team_name : ""
-    description : "Fork of eclipse-tractusx/bpdm repository"
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "product-onboarding" : {
     name : "product-onboarding"
     team_name : "argocdadmins"
@@ -1778,60 +1561,6 @@ github_repositories = {
     codeowners : null
     archived : false
   },
-  "tx-managed-identity-wallets" : {
-    name : "tx-managed-identity-wallets"
-    team_name : ""
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : true
-      branch : "main"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-traceability-foss-frontend" : {
-    name : "tx-traceability-foss-frontend"
-    team_name : ""
-    description : "https://catenax-ng.github.io/tx-traceability-foss-backend/docs"
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-traceability-foss-backend" : {
-    name : "tx-traceability-foss-backend"
-    team_name : ""
-    description : "https://catenax-ng.github.io/tx-traceability-foss-backend/docs"
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : true
-      branch : "gh-pages"
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
   "product-portal-swagger" : {
     name : "product-portal-swagger"
     team_name : ""
@@ -1860,78 +1589,6 @@ github_repositories = {
     pages : {
       enabled : false
       branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-data-exchange-test-service" : {
-    name : "tx-data-exchange-test-service"
-    team_name : ""
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-vas-country-risk-frontend" : {
-    name : "tx-vas-country-risk-frontend"
-    team_name : "product-value-added-service"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-vas-country-risk-backend" : {
-    name : "tx-vas-country-risk-backend"
-    team_name : "product-value-added-service"
-    description : ""
-    visibility : "public"
-    homepage_url : ""
-    topics : []
-    pages : {
-      enabled : false
-      branch : ""
-    }
-    is_template : false
-    uses_template : false
-    template : null
-    codeowners_available : false
-    codeowners : null
-    archived : false
-  },
-  "tx-digital-product-pass" : {
-    name : "tx-digital-product-pass"
-    team_name : "product-material-pass"
-    description : "Tractus-X Fork of Catena-X Digital Product Passport Application (Frontend/Backend)"
-    visibility : "public"
-    homepage_url : "https://materialpass.int.demo.catena-x.net"
-    topics : []
-    pages : {
-      enabled : true
-      branch : "gh-pages"
     }
     is_template : false
     uses_template : false
@@ -2064,16 +1721,6 @@ github_repositories_teams = {
     repository : "product-dft-frontend"
     permission : "maintain"
   },
-  "tx-dft-backend-product-dft" : {
-    team_name : "product-dft"
-    repository : "tx-dft-backend"
-    permission : "maintain"
-  },
-  "tx-dft-frontend-product-dft" : {
-    team_name : "product-dft"
-    repository : "tx-dft-frontend"
-    permission : "maintain"
-  },
   "product-sd-hub-product-essential-services" : {
     team_name : "product-essential-services"
     repository : "product-sd-hub"
@@ -2094,30 +1741,10 @@ github_repositories_teams = {
     repository : "product-daps-registration-service"
     permission : "maintain"
   },
-  "tx-sd-factory-product-essential-services" : {
-    team_name : "product-essential-services"
-    repository : "tx-sd-factory"
-    permission : "maintain"
-  },
-  "tx-autosetup-backend-product-essential-services" : {
-    team_name : "product-essential-services"
-    repository : "tx-autosetup-backend"
-    permission : "maintain"
-  },
-  "tx-daps-registration-service-product-essential-services" : {
-    team_name : "product-essential-services"
-    repository : "tx-daps-registration-service"
-    permission : "maintain"
-  },
   "product-item-relationship-service-product-traceability-irs" : {
     team_name : "product-traceability-irs"
     repository : "product-item-relationship-service"
     permission : "pull"
-  },
-  "tx-item-relationship-service-product-traceability-irs" : {
-    team_name : "product-traceability-irs"
-    repository : "tx-item-relationship-service"
-    permission : "maintain"
   },
   "product-testdata-2-edc-product-data-integrity-demonstrator" : {
     team_name : "product-data-integrity-demonstrator"
@@ -2294,26 +1921,6 @@ github_repositories_teams = {
     repository : "catena-x-release-deployment"
     permission : "push"
   },
-  "tx-portal-assets-product-portal" : {
-    team_name : "product-portal"
-    repository : "tx-portal-assets"
-    permission : "maintain"
-  },
-  "tx-portal-frontend-registration-product-portal" : {
-    team_name : "product-portal"
-    repository : "tx-portal-frontend-registration"
-    permission : "maintain"
-  },
-  "tx-portal-frontend-product-portal" : {
-    team_name : "product-portal"
-    repository : "tx-portal-frontend"
-    permission : "maintain"
-  },
-  "tx-portal-backend-product-portal" : {
-    team_name : "product-portal"
-    repository : "tx-portal-backend"
-    permission : "maintain"
-  },
   "catena-x-release-deployment-product-semantics" : {
     team_name : "product-semantics"
     repository : "catena-x-release-deployment"
@@ -2394,11 +2001,6 @@ github_repositories_teams = {
     repository : "product-behaviour-twin-minio"
     permission : "maintain"
   },
-  "tx-bpdm-tx-bpdm" : {
-    team_name : "product-bpdm"
-    repository : "tx-bpdm"
-    permission : "maintain"
-  },
   "product-onboarding-argocdadmins" : {
     team_name : "argocdadmins"
     repository : "product-onboarding"
@@ -2409,51 +2011,16 @@ github_repositories_teams = {
     repository : "cloud-infra"
     permission : "admin"
   },
-  "tx-managed-identity-wallets-product-managed-identity-wallets" : {
-    team_name : "product-managed-identity-wallets"
-    repository : "tx-managed-identity-wallets"
-    permission : "maintain"
-  },
-  "tx-traceability-foss-frontend-product-traceability-foss" : {
-    team_name : "product-traceability-foss"
-    repository : "tx-traceability-foss-frontend"
-    permission : "maintain"
-  },
-  "tx-traceability-foss-backend-product-traceability-foss" : {
-    team_name : "product-traceability-foss"
-    repository : "tx-traceability-foss-backend"
-    permission : "maintain"
-  },
-  "tx-data-exchange-test-service-product-essential-services" : {
-    team_name : "product-essential-services"
-    repository : "tx-data-exchange-test-service"
-    permission : "maintain"
-  },
   "product-portal-swagger-product-portal" : {
     team_name : "product-portal"
     repository : "product-portal-swagger"
     permission : "maintain"
   },
-  "tx-vas-country-risk-frontend-product-value-added-service" : {
-    team_name : "product-value-added-service"
-    repository : "tx-vas-country-risk-frontend"
-    permission : "maintain"
-  },
-  "tx-vas-country-risk-backend-product-value-added-service" : {
-    team_name : "product-value-added-service"
-    repository : "tx-vas-country-risk-backend"
-    permission : "maintain"
-  }
-  "tx-digital-product-pass-product-material-pass" : {
-    team_name : "product-material-pass"
-    repository : "tx-digital-product-pass"
-    permission : "maintain"
-  }
   "eclipse-tractusx.github.io-argocdadmins" : {
     team_name : "argocdadmins"
     repository : "eclipse-tractusx.github.io"
     permission : "admin"
-  }
+  },
   "eclipse-tractusx.github.io-traceability-spec" : {
     team_name : "traceability-spec"
     repository : "eclipse-tractusx.github.io"
